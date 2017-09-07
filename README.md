@@ -2,19 +2,19 @@
 
 ![AssessmentQuestions]  
 
-## BEFORE:
-### ★ Added New Column with Formula:
+# BEFORE:
+## ★ Added New Column with Formula:
 >**=MID(D7,5,1)**  
 >Returns exact the last character of the 5-digit zip code string (and if the zip code does not have 5 characters, then it returns nothing – which is good to double check any errors as to why there is not a 5-digit zip code)  
   
-### ★ “Froze” the top six panes  
+## ★ “Froze” the top six panes  
 >I froze them so that data can sort without sorting the column headers.  
 >Sorted this new column of last digits, 0-9, and then non-numbers at the bottom.  
   
-### ★ Filtered the data by new column so that only “3” entries showed – then deleted all.  
+## ★ Filtered the data by new column so that only “3” entries showed – then deleted all.  
 >Repeated filtering and deleting for 5 and 7 as well.  
   
-### ★ Added Another New Column with Formula:  
+## ★ Added Another New Column with Formula:  
 >**=ISNUMBER(SEARCH("foreign",F7))**  
 >This checks to see which schools are “foreign” institutions.  
   
