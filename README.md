@@ -3,7 +3,7 @@
 ![AssessmentQuestions]  
   
 ----------
-# BEFORE:
+# BEFORE
 ### ★ Added New Column with Formula:
 >***=MID(D7,5,1)***  
 >Returns exact the last character of the 5-digit zip code string (and if the zip code does not have 5 characters, then it returns nothing – which is good to double check any errors as to why there is not a 5-digit zip code)  
@@ -21,8 +21,7 @@
 >This checks to see which schools are “foreign” institutions.  
   
 ----------
-# QUESTION 1:  
-# *ANSWER: 1*  
+# QUESTION 1 (*ANSWER=1*)  
   
 ### ★ New Columns and Formula:  
 >***=IF(ISNUMBER(SEARCH("-",O7))=TRUE,0,O7)***
@@ -43,8 +42,7 @@ I did this 6 times for the 2010-2011 data and for the 2015-2016 data (at the sam
 >153-152 = 1  
   
 ----------
-# QUESTION 2:  
-# *ANSWER: 2*
+# QUESTION 2 (*ANSWER= 2*)
 
 
   
