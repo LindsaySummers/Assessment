@@ -24,7 +24,7 @@
 # QUESTION 1 (*ANSWER=1*)  
   
 ### ★ New Columns and Formula:  
->***=IF(ISNUMBER(SEARCH("-",O7))=TRUE,0,O7)***
+>***=IF(ISNUMBER(SEARCH("-",O7))=TRUE,0,O7)***  
 >The formula checked the column next to it (“$ of Disbursements”) to see if there is a “-“ which denotes no money, and returns a “0” (zero) instead. If there are only numbers in the cell, and no “-” (which denotes any money value), then it returns that money value. I did this only to correct the dash “-“ into a numeric value in order to use it in an addition formula.  
 >I did this 6 times for the 2010-2011 data and for the 2015-2016 data (at the same time, by highlight both worksheets at once), in order to derive the sum of $ disbursements.  
   
@@ -42,10 +42,10 @@
 >153-152 = 1  
   
 ----------
-# QUESTION 2 (*ANSWER= 2*)
+# QUESTION 2 (*ANSWER= 2*)  
 I used a similar method from Question 1:  
   
-### ★ Added New Column and Formula
+### ★ Added New Column and Formula  
 >***=IF(ISNUMBER(SEARCH("-",W64))=TRUE,0,W64)***  
 >I inserted new columns next to all the columns named “$ of Loans Originated” and used the same formula from Question 1 in order to convert all the dashes into zeros (to easily find the sums).  
   
@@ -55,18 +55,18 @@ I used a similar method from Question 1:
   
 ### ★ Which Are More Than $20-Million?  
 >***=IF(Q64>20000000,"yes","no")***  
->Next, in another new column, a formula to identify which schools had a sum of more than $20,000,000 (with a simple “yes” or “no”).
+>Next, in another new column, a formula to identify which schools had a sum of more than $20,000,000 (with a simple “yes” or “no”).  
   
-### ★ How Many? Let's Count!
+### ★ How Many? Let's Count!  
 >***=COUNTIF(P7:P3520,"yes")***  
 >Finally, in one of the cells in the top “frozen” rows, a formula to count all the “yes” answers.  
 >I did this for both 2010 and 2015 sheets at the same time.  
   
-### ★ Time to Compare!
->Now to compare both answers (since the question was "how many MORE...?"
->2015 had 530 schools with over $20-million in loans (if they were fully disbursed)
->2010 had 528 schools with over $20-million in loans (if they were fully disbursed)
->530-528 = 2
+### ★ Time to Compare!  
+>Now to compare both answers (since the question was "how many MORE...?"  
+>2015 had 530 schools with over $20-million in loans (if they were fully disbursed)  
+>2010 had 528 schools with over $20-million in loans (if they were fully disbursed)  
+>530-528 = 2  
 
 
   
