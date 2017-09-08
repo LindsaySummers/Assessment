@@ -92,9 +92,9 @@ I used a similar method from Question 1:
 > I quickly added two columns:  
 >(1) # of Recipients of DL Gradeuate, and  
 >(2) # of Recipients of DLGrad Plus loans  
->which was just copying the columns of data to where I was working  
+>which really just copied the columns of data to where I was working  
 >  
->**NOTE:** This was necessary, but I just like to see the data side-by-side to where I'm currently working  
+>**NOTE:** This was NOT necessary, but I just like to see the data side-by-side to where I'm currently working  
 
 ### ★ Add Both for Total Recipients
 >***=G457+H457***  
