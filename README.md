@@ -68,24 +68,31 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >(5) DL PARENT PLUS  
 >(6) DL GRAD PLUS 
 >  
->In the newly added columns, this formula:  
+>In the newly added columns, a formula similar to:  
 >***=IF(ISNUMBER(SEARCH("-",O7))=TRUE,0,O7)***  
+>*(where the "07" cell corresponds to the cell "$ of Disbursements" for that particular loan)*  
 >The formula checks the column next to it (“$ of Disbursements”) to see if there is a “-“ which denotes no money, and returns a “0” (zero) instead. If there are only numbers in the cell, and no “-” (which denotes any money value), then it returns that money value. I did this only to correct the dash “-“ into a numeric value in order to use it in an addition formula.  
 >  
 >I did this 6 times for the 2010-2011 data and for the 2015-2016 data (at the same time, by highlight both worksheets at once), in order to derive the sum of $ disbursements.  
   
+### ★ The Sum of All Disbursements From a Particular School    
+>Insert another column on the left side of the all the loans with formula: 
+>***=Y64+AF64+AM64+AT64+BA64***  
+>*(where each cell corresponds to our converted "$ of Disbursements")*
+  
 ### ★ Is the Sum Between $2000-$9500?  
 >Insert another column on the left side of the all the loans with formula:  
 >***=IF(AND(I7>=2000,I7<9500),"yes","no")***  
->Once I had the sum, I then used a conditional statement to determine if the sum fell between $2000 (or equal to) and $9500, with a simple “yes” or “no”  
+>*(where the "I7" cell corresponds to the cell we just previously added with the sum) 
+>Once I had the sum, I then used a this conditional statement to determine if the sum fell between $2000 (or equal to) and $9500, with a simple “yes” or “no”  
   
 ### ★ How Many? Let's Count!  
 >***=COUNTIF(H7:H3520,"yes")***  
 >Now that I have “answers,” I simply counted all the “yes”-answers  
->I did this both both sets of data at the same time.  
+>**Remember:** We're doing this both both sets of data at the same time! (Sweet!)  
 
 ### ★ Time to Compare!
->Once I had two numerical answers, I simply subtracted since the question was “how many MORE…?”  
+>Now that we have two numerical answers, let's simply subtract since the question is “how many MORE…?”  
 >153-152 = 1  
   
 ![Divider]
@@ -118,8 +125,8 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >2010 had 528 schools with over $20-million in loans (if they were fully disbursed)  
 >530-528 = 2  
   
-----------
-----------
+![Divider]
+  
 ### QUESTION 3: In 2015, consider all the colonial colleges founded before the declaration of independence. Amongst these, what was the largest number of recipients within a school for either DL Graduate or DL Grad Plus loans?  
   
 # ANSWER= 6862  
@@ -156,12 +163,12 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >  
 >**NOTE:** I added because "OR" means either could work to accomplish the task. For example, if I rolled a die and I win the game if I roll a 3 OR 5. Then you would ADD the probabilites together... Or think about a Venn Diagram: BOTH of the overlapping circles would be shaded in.  
   
-### ★ Rutgers "Wins"!
+### ★ Rutgers "Wins"!  
 >5488 (DL Gradeuate Loans) + 1374 (DLGrad Plus Loans)  
->=6,862
-
-----------
-----------
+>=6,862  
+  
+![Divider]
+  
 ### QUESTION 4: In 2015, consider all the private nonprofit schools in King county, WA. For these schools, consider the expected total loan amount if the loan is fully disbursed for unsubsidized graduate studies. Exclude all schools where the unsubsidized graduate loan amount is not available i.e. “-” or 0. What was the median value?  
   
 # ANSWER= 5889721  
@@ -203,8 +210,8 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 > The median is the number in the middle of sorted data. In this case, there were 2 less than it, and two greater than it (since there were 5 non-zero entries).  
 >Therefore, the median number is 5889721
   
-----------
-----------
+![Divider]
+  
 ### QUESTION 5: Consider all the schools who were football champions in National Collegiate Athletic Association (reference: www.ncaa.com) from 2001 to 2015 (both years included) in the FBS division. For these schools (only include main campuses that participate in football and not all campuses) consider the expected total loan amount if the loan is fully disbursed for GRAD PLUS loans in 2015 data provided. Calculate the sum of these amounts.  
   
 # ANSWER= 193850316  
