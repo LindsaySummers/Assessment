@@ -104,9 +104,40 @@ I used a similar method from Question 1:
 >=6,862
 
 ----------
-# QUESTION 4 (*ANSWER= 5889721)
-***$5,889,721, from City University of Seattle, was the median value of fully disbursed unsubsidized graduate loans.***
-
+# QUESTION 4 (*ANSWER= 5889721*)
+***$5,889,721, from City University of Seattle, was the median value of fully disbursed unsubsidized graduate loans.***  
   
+### ★ Research List of Info'
+>First, I searched for a list of the zip codes of King County.  
+>I found a list which was already in a chart, which made it super easy to insert into a spreadsheet - PERFECT!  
+  
+### ★ New Data, New Sheet!  
+>I inserted a new sheet, copy-and-pasted the data set (all the zip codes in King County).  
+  
+### ★ Filter the Data!  
+>If we're only looking for King County Schools, let's filter out ALL the states except for WA!  
+  
+### ★ Insert Column and Formula  
+***=VLOOKUP(L296,'King County'!$A$2:$C$153,3,FALSE)***  
+>NOW I can use a fast and convenient "LOOKUP" formula (Yay! So easy! Remember the one I was thinking of in Question 3 but it would have been more trouble than it was worth?)  
+>This formula basically says "Grab the zipcode that was given in the original data set and try to match it to the new zip code chart (on the other sheet). IF there is a match, then write "King County"  
+>(which is what that "3" is in the formula... the third column of my newly inserted chart was entirely "King County")  
+>NOTE: This is kind of like the "COUNT" formulas I used before in the sense of just findind "Answers" quickly.  
+>I could have had that third column say "Yes", or "Lindsay is Awesome", or "Ada Rocks".... It really doesn't matter - it's just a quick bookmark to mark which entries I want to look at.  
+  
+### ★ Filter the Data (Again)!  
+>Now that we've identified all of the King County schools, let's filter the data so that only those schools are showing.  
+>Six King County schools are shown  
+
+### ★ Insert Column and Formula  
+>***=AJ296***  
+>This is just a quick way to pull the one column of data that we want: "Direct Loans Unsubsidized Graduate, $ of Loans Originated"  
+  
+### ★ Indentify the Median  
+>In this newly added column of six entries, 5 were non-zero entries.  
+>The median number is 5889721 (it is the number in the middle: 2 less than it, and two greater than it).  
+
+
+
 
 [AssessmentQuestions]: https://
