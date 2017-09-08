@@ -89,7 +89,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 ### ★ How Many? Let's Count!  
 >***=COUNTIF(H7:H3520,"yes")***  
 >Now that I have “answers,” I simply counted all the “yes”-answers  
->**Remember:** We're doing this both both sets of data at the same time! (Sweet!)  
+>**Remember:** We're doing this for both sets of data at the same time! (Sweet!)  
 
 ### ★ Time to Compare!
 >Now that we have two numerical answers, let's simply subtract since the question is “how many MORE…?”  
@@ -150,7 +150,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
   
 ### ★ Insert Columns with Formulas (Optional)  
 > I quickly added two columns:  
->(1) # of Recipients of DL Gradeuate, and  
+>(1) # of Recipients of DL Graduate, and  
 >(2) # of Recipients of DLGrad Plus loans  
 >which really just copied the columns of data to where I was working  
 >  
@@ -158,13 +158,13 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 
 ### ★ Add Both for Total Recipients
 >***=G457+H457***  
->DL Gradeuate or (plus) DLGrad Plus loans  
+>DL Graduate or (plus) DLGrad Plus loans  
 >I then inserted another column to add both of the previously mentioned recipients for each school.  
 >  
->**NOTE:** I added because "OR" means either could work to accomplish the task. For example, if I rolled a die and I win the game if I roll a 3 OR 5. Then you would ADD the probabilites together... Or think about a Venn Diagram: BOTH of the overlapping circles would be shaded in.  
+>**NOTE:** I added because "OR" means either could work to accomplish the task. For example, if I rolled a die and I win the game if I roll a 3 OR 5. Then you would ADD the probabilities together... Or think about a Venn Diagram: BOTH of the overlapping circles would be shaded in.  
   
 ### ★ Rutgers "Wins"!  
->5488 (DL Gradeuate Loans) + 1374 (DLGrad Plus Loans)  
+>5488 (DL Graduate Loans) + 1374 (DLGrad Plus Loans)  
 >=6,862  
   
 ![Divider]
@@ -187,10 +187,10 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 ### ★ Insert Column and Formula  
 >***=VLOOKUP(L296,'King County'!$A$2:$C$153,3,FALSE)***  
 >NOW I can use a fast and convenient "LOOKUP" formula (Yay! So easy! Remember the one I was thinking of in Question 3 but it would have been more trouble than it was worth?)  
->This formula basically says "Grab the zipcode that was given in the original data set and try to match it to the new zip code chart (on the other sheet). IF there is a match, then write "King County"  
+>This formula basically says "Grab the zip code that was given in the original data set and try to match it to the new zip code chart (on the other sheet). IF there is a match, then write "King County"  
 >(which is what that "3" is in the formula... the third column of my newly inserted chart was entirely "King County")  
 >  
->**NOTE:** This is kind of like the "COUNT" formulas I used before in the sense of just findind "Answers" quickly.  
+>**NOTE:** This is kind of like the "COUNT" formulas I used before in the sense of just finding "Answers" quickly.  
 >  
 >I could have had that third column say "Yes", or "Lindsay is Awesome", or "Ada Rocks".... It really doesn't matter - it's just a quick bookmark to mark which entries I want to look at.  
   
@@ -206,7 +206,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >In this newly added column of six entries, 5 were non-zero entries.  
 >We need to sort the data (doesn't matter in which direction, but I sorted from smallest to largest)  
   
-### ★ Indentify the Median  
+### ★ Identify the Median  
 > The median is the number in the middle of sorted data. In this case, there were 2 less than it, and two greater than it (since there were 5 non-zero entries).  
 >Therefore, the median number is 5889721
   
@@ -219,7 +219,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
   
 ### ★ Research First!
 >I referred to www.ncaa.com in order to obtain the information about which schools were football champions.  
->The information I found on that website was helpful, but also a bit vague, so I crossed refereced this information with other online sources. I did this in order to confirm the school names (Example: “Florida” is indeed the “University of Florida” and not “Florida University”).  
+>The information I found on that website was helpful, but also a bit vague, so I crossed referenced this information with other online sources. I did this in order to confirm the school names (Example: “Florida” is indeed the “University of Florida” and not “Florida University”).  
 >  
 >**NOTE:** I put this information in a list on a separate sheet  
   
