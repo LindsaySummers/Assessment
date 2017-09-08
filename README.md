@@ -78,9 +78,11 @@ I used a similar method from Question 1:
 ### ★ Another Column for Colonial Notes  
 >Once I had the list of the 9 colonial schools, I inserted another column just so I could make a note of these schools (which turned out to only be 7, because two were eliminated due to their zip codes).  
 >I filtered by state and manually found the school alphabetically because...  
->NOTE: I originally had the thought to use a "LOOKUP"-formula to quickly identify the schools automatically. However, that plan didn't work for two reasons:  
+>  
+>**NOTE:** I originally had the thought to use a "LOOKUP"-formula to quickly identify the schools automatically. However, that plan didn't work for two reasons:  
 >(1) because "=VLOOKUP"-formula has to match EXACTLY; so if I typed "and" instead of "&", the formula wouldn't work  
 >(2) because if I tried to identify just key words instead of being exact, then the satellite schools would also be included, which also would not work.  
+>  
 >Hence, since there were only 7 schools, the easiest, and quickest, way for me to accomplish this task was to filter by state and manually make a note  
   
 ### ★ Filter Only Colonial Schools  
@@ -91,13 +93,15 @@ I used a similar method from Question 1:
 >(1) # of Recipients of DL Gradeuate, and  
 >(2) # of Recipients of DLGrad Plus loans  
 >which was just copying the columns of data to where I was working  
->NOTE: This was necessary, but I just like to see the data side-by-side to where I'm currently working  
+>  
+>**NOTE:** This was necessary, but I just like to see the data side-by-side to where I'm currently working  
 
 ### ★ Add Both for Total Recipients
 >***=G457+H457***  
 >DL Gradeuate or (plus) DLGrad Plus loans  
 >I then inserted another column to add both of the previously mentioned recipients for each school.  
->NOTE: I added because "OR" means either could work to accomplish the task. For example, if I rolled a die and I win the game if I roll a 3 OR 5. Then you would ADD the probabilites together... Or think about a Venn Diagram: BOTH of the overlapping circles would be shaded in.  
+>  
+>**NOTE:** I added because "OR" means either could work to accomplish the task. For example, if I rolled a die and I win the game if I roll a 3 OR 5. Then you would ADD the probabilites together... Or think about a Venn Diagram: BOTH of the overlapping circles would be shaded in.  
   
 ### ★ Rutgers "Wins"!
 >5488 (DL Gradeuate Loans) + 1374 (DLGrad Plus Loans)  
@@ -118,11 +122,13 @@ I used a similar method from Question 1:
 >If we're only looking for King County Schools, let's filter out ALL the states except for WA!  
   
 ### ★ Insert Column and Formula  
-***=VLOOKUP(L296,'King County'!$A$2:$C$153,3,FALSE)***  
+>***=VLOOKUP(L296,'King County'!$A$2:$C$153,3,FALSE)***  
 >NOW I can use a fast and convenient "LOOKUP" formula (Yay! So easy! Remember the one I was thinking of in Question 3 but it would have been more trouble than it was worth?)  
 >This formula basically says "Grab the zipcode that was given in the original data set and try to match it to the new zip code chart (on the other sheet). IF there is a match, then write "King County"  
 >(which is what that "3" is in the formula... the third column of my newly inserted chart was entirely "King County")  
->NOTE: This is kind of like the "COUNT" formulas I used before in the sense of just findind "Answers" quickly.  
+>  
+>**NOTE:** This is kind of like the "COUNT" formulas I used before in the sense of just findind "Answers" quickly.  
+>  
 >I could have had that third column say "Yes", or "Lindsay is Awesome", or "Ada Rocks".... It really doesn't matter - it's just a quick bookmark to mark which entries I want to look at.  
   
 ### ★ Filter the Data (Again)!  
