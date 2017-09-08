@@ -48,8 +48,8 @@ Then, I double click on the bottom right corner of the highlighted cell with for
   
 **NOTE:** Repeat all of these steps again for other data set as well!  
   
-----------
-----------
+![Divider]
+  
 ### *QUESTION 1: Consider all of the schools that disbursed a total of greater than or equal to $2,000 and less than $9,500 in loans for the time period reported on the spreadsheets provided (i.e. quarter 1). How many more schools met this criteria in 2015 than in 2010?*  
   
 # ANSWER=1  
@@ -88,8 +88,8 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >Once I had two numerical answers, I simply subtracted since the question was “how many MORE…?”  
 >153-152 = 1  
   
-----------
-----------
+![Divider]
+  
 ### QUESTION 2: Consider the sum of expected total loan amount if the loans were fully disbursed for each school. In 2010 as compared to 2015, for how many more schools was this amount greater than $20,000,000?   
   
 # ANSWER= 2  
@@ -234,3 +234,4 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 
 
 [AssessmentQuestions]: https://github.com/LindsaySummers/Assessment/blob/master/Assessment%20Questions.png
+[Divider]: https://github.com/LindsaySummers/Assessment/blob/master/divider.png
