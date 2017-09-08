@@ -3,6 +3,7 @@
 ![AssessmentQuestions]  
   
 ----------
+----------
 # SET UP BEFORE
 *Please note, that when I "insert column with formula" and give the example, that example is just for the first cell in the column.  
 Then, I double click on the bottom right corner of the highlighted cell with formula so that the formula continues for the entire column. To streamline directions, I will not write this out every time*  
@@ -50,6 +51,7 @@ Then, I double click on the bottom right corner of the highlighted cell with for
 **NOTE:** Repeat all of these steps again for other data set as well!  
   
 ----------
+----------
 ### *QUESTION 1: Consider all of the schools that disbursed a total of greater than or equal to $2,000 and less than $9,500 in loans for the time period reported on the spreadsheets provided (i.e. quarter 1). How many more schools met this criteria in 2015 than in 2010?*  
   
 # ANSWER=1  
@@ -89,6 +91,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >153-152 = 1  
   
 ----------
+----------
 ### QUESTION 2: Consider the sum of expected total loan amount if the loans were fully disbursed for each school. In 2010 as compared to 2015, for how many more schools was this amount greater than $20,000,000?   
   
 # ANSWER= 2  
@@ -117,6 +120,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >2010 had 528 schools with over $20-million in loans (if they were fully disbursed)  
 >530-528 = 2  
   
+----------
 ----------
 ### QUESTION 3: In 2015, consider all the colonial colleges founded before the declaration of independence. Amongst these, what was the largest number of recipients within a school for either DL Graduate or DL Grad Plus loans?  
   
@@ -159,7 +163,10 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >=6,862
 
 ----------
-# QUESTION 4 (*ANSWER= 5889721*)
+----------
+### QUESTION 4: In 2015, consider all the private nonprofit schools in King county, WA. For these schools, consider the expected total loan amount if the loan is fully disbursed for unsubsidized graduate studies. Exclude all schools where the unsubsidized graduate loan amount is not available i.e. “-” or 0. What was the median value?  
+  
+# ANSWER= 5889721  
 ***$5,889,721, from City University of Seattle, was the median value of fully disbursed unsubsidized graduate loans.***  
   
 ### ★ Research List of Info'
@@ -199,9 +206,12 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >Therefore, the median number is 5889721
   
 ----------
-# QUESTION 5 (*ANSWER= 193850316*)
+----------
+### QUESTION 5: Consider all the schools who were football champions in National Collegiate Athletic Association (reference: www.ncaa.com) from 2001 to 2015 (both years included) in the FBS division. For these schools (only include main campuses that participate in football and not all campuses) consider the expected total loan amount if the loan is fully disbursed for GRAD PLUS loans in 2015 data provided. Calculate the sum of these amounts.  
+  
+# ANSWER= 193850316  
 ***$193,850,316 is the sum of all fully disbursed Grad Plus loans within 2015-2016 from the football-champion-schools from 2001-2015 (inclusive).***  
-
+  
 ### ★ Research First!
 >I referred to www.ncaa.com in order to obtain the information about which schools were football champions.  
 >The information I found on that website was helpful, but also a bit vague, so I crossed refereced this information with other online sources. I did this in order to confirm the school names (Example: “Florida” is indeed the “University of Florida” and not “Florida University”).  
