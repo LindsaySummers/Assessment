@@ -3,14 +3,34 @@
 ![AssessmentQuestions]  
   
 ----------
-# BEFORE
-### ★ Insert Column with Formula
->***=MID(D7,5,1)***  
->Returns exact the last character of the 5-digit zip code string (and if the zip code does not have 5 characters, then it returns nothing – which is good to double check any errors as to why there is not a 5-digit zip code)  
+# NOTES BEFORE  
+>Please note, that when I "insert column with formula" and give the example, that example is just for the first cell in the column.  
+>Then, I double click on the bottom right corner of the highlighted cell with formula so that the formula continues for the entire column  
+>To streamline directions, I will not write this out every time.
+  
+----------
+# SET UP BEFORE
+  
+### ★ New Workbook & Two New Spreadsheets  
+>First, I opened a new, separate, Excel file with two spreadsheets - one for each set of the data sets (2010, and the other for 2015)  
+  
+### ★ Copy, Paste, Rename, Repeat 
+>(Copy) I copied the 2010 data (by clicking on the top left corner, it highlights ALL data)  
+>(Paste) I pasted that data into the new workbook  
+>(Rename) I renamed the current worksheet to "2010"  
+>(Repeat) I repeated these steps exactly for the 2015 data
   
 ### ★ “Froze” the Top Six Panes  
+>By clicking on A7
+>   The first column, so that no columns before are affected)
+>   And the 7th row, so that the first 6 rows "Freeze"
 >I froze them so that data can sort without sorting the column headers.  
 >Sorted this new column of last digits, 0-9, and then non-numbers at the bottom.  
+  
+### ★ Insert Column with Formula
+>***=MID(D7,5,1)***  
+>Returns exactly the last character of the 5-digit zip code string (and if the zip code does not have 5 characters, then it returns nothing – which is good to double check any errors as to why there is not a 5-digit zip code)  
+>(continued for entire column, as the note applies above)
   
 ### ★ Filtered and Deleted 3's, 5's, and 7's
 >Filtered the data by new column so that only “3” entries showed – then deleted all.  
@@ -149,7 +169,7 @@ I used a similar method from Question 1:
   
 ----------
 # QUESTION 5 (*ANSWER= 193850316*)
-***$193,850,316 is the sum of all fully disbursed Grad Plus loans from football-champion-schools from 2001-2015 (inclusive).***  
+***$193,850,316 is the sum of all fully disbursed Grad Plus loans within 2015-2016 from the football-champion-schools from 2001-2015 (inclusive).***  
 
 ### ★ Research First!
 >I referred to www.ncaa.com in order to obtain the information about which schools were football champions.  
