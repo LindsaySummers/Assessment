@@ -55,7 +55,7 @@ Then, I double click on the bottom right corner of the highlighted cell with for
 # ANSWER=1  
   
 ***NOTE:** Before beginning, hold down CTRL and click on the other tab (the other spreadsheet of the other data set). This will highlight BOTH tab so that you can work with both data sets at once and save you half the amount of time.  
-If you're wondering why I didn't do this before, it's because entries were being deleted... So to be on the save side, I thought it was best to work with each data set separately.  
+If you're wondering why I didn't do this before, it's because entries were being deleted... So to be on the safe side, I thought it was best to work with each data set separately.  
 HOWEVER, now that we're not deleting, AND both worksheets are set up with the exact same columns, we most certainly can use this shortcut!*  
   
 ### ★ Insert Columns with Formula  
