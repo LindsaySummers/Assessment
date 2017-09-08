@@ -3,13 +3,9 @@
 ![AssessmentQuestions]  
   
 ----------
-# NOTES BEFORE  
->Please note, that when I "insert column with formula" and give the example, that example is just for the first cell in the column.  
->Then, I double click on the bottom right corner of the highlighted cell with formula so that the formula continues for the entire column  
->To streamline directions, I will not write this out every time.
-  
-----------
 # SET UP BEFORE
+*Please note, that when I "insert column with formula" and give the example, that example is just for the first cell in the column.  
+Then, I double click on the bottom right corner of the highlighted cell with formula so that the formula continues for the entire column. To streamline directions, I will not write this out every time*  
   
 ### ★ New Workbook & Two New Spreadsheets  
 >First, I opened a new, separate, Excel file with two spreadsheets - one for each set of the data sets (2010, and the other for 2015)  
@@ -21,9 +17,7 @@
 >(Repeat) I repeated these steps exactly for the 2015 data
   
 ### ★ “Froze” the Top Six Panes  
->By clicking on A7
->   The first column, so that no columns before are affected)
->   And the 7th row, so that the first 6 rows "Freeze"
+>By clicking on A7 - The first column, so that no columns before are affected, and the 7th row, so that the first 6 rows "Freeze"  
 >I froze them so that data can sort without sorting the column headers.  
 >Sorted this new column of last digits, 0-9, and then non-numbers at the bottom.  
   
