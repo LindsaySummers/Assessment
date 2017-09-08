@@ -2,8 +2,6 @@
 
 ![AssessmentQuestions]  
   
-----------
-----------
 # SET UP BEFORE
 *Please note, that when I "insert column with formula" and give the example, that example is just for the first cell in the column.  
 Then, I double click on the bottom right corner of the highlighted cell with formula so that the formula continues for the entire column. To streamline directions, I will not write this out every time*  
