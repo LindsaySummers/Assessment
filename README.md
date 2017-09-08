@@ -16,33 +16,64 @@ Then, I double click on the bottom right corner of the highlighted cell with for
 >(Rename) I renamed the current worksheet to "2010"  
 >(Repeat) I repeated these steps exactly for the 2015 data
   
-### ★ “Froze” the Top Six Panes  
+### ★ “Freeze” the Top Six Panes  
+>***VIEW >> FREEZE PANES***  
 >By clicking on A7 - The first column, so that no columns before are affected, and the 7th row, so that the first 6 rows "Freeze"  
 >I froze them so that data can sort without sorting the column headers.  
 >Sorted this new column of last digits, 0-9, and then non-numbers at the bottom.  
+>Repeat steps for both spreadsheets  
   
 ### ★ Insert Column with Formula
 >***=MID(D7,5,1)***  
 >Returns exactly the last character of the 5-digit zip code string (and if the zip code does not have 5 characters, then it returns nothing – which is good to double check any errors as to why there is not a 5-digit zip code)  
 >(continued for entire column, as the note applies above)
   
-### ★ Filtered and Deleted 3's, 5's, and 7's
->Filtered the data by new column so that only “3” entries showed – then deleted all.  
->Repeated filtering and deleting for 5 and 7 as well.  
+### ★ Filter & Delete 3's, 5's, and 7's
+>Highlight row 6 (since those are the header titles to our columns)
+>***DATA >> FILTER***   
+>Now each column can be Filtered (good for later use)
+>Filtered the data in the new column so that only “3” entries showed  
+>Then, deleted all rows with "3" entries  
+>Repeated filtering and deleting rows for 5s and 7s as well.  
+>**NOTE:** Click on the first row, and then to highlight all row quickly (instead of scrolling down), CTRL+SHIFT+DownArrow  
+>**NOTE:** To make sure all 3's (for example) were deleted, you should NOT see "3" as a choice in your Filter-Menu from now on.   
   
 ### ★ Insert Another Column with Formula  
+>(Next to the "School Type" Column)  
 >***=ISNUMBER(SEARCH("foreign",F7))***  
->This checks to see which schools are “foreign” institutions.  
+>This checks to see which schools are “foreign” institutions and will return a simple "TRUE" or "FALSE".  
+  
+### ★ Filter & Delete Foreign Institutions  
+>Filter this new column so that you see only "TRUE" (which means, "yes, it is TRUE that this is a foreign institution")  
+>Delete all rows with "TRUE"  
+  
+**NOTE:** Repeat all of these steps again for other data set as well!  
   
 ----------
-# QUESTION 1 (*ANSWER=1*)  
+### QUESTION 1: Consider all of the schools that disbursed a total of greater than or equal to $2,000 and less than $9,500 in loans for the time period reported on the spreadsheets provided (i.e. quarter 1). How many more schools met this criteria in 2015 than in 2010?  
+#*ANSWER=1*d
   
-### ★ Insert Column with Formula  
+***NOTE:** Before beginning, hold down CTRL and click on the other tab (the other spreadsheet of the other data set). This will highlight BOTH tab so that you can work with both data sets at once and save you half the amount of time.  
+If you're wondering why I didn't do this before, it's because entries were being deleted... So to be on the save side, I thought it was best to work with each data set separately.  
+HOWEVER, now that we're not deleting, AND both worksheets are set up with the exact same columns, we most certainly can use this shortcut!*  
+  
+### ★ Insert Columns with Formula  
+>(Next to ALL the "$ of Disbursements" Columns for each type of loan:  
+>Note, that there are 6:  
+>(1) DL SUBSIDIZED- UNDERGRADUATE  
+>(2) DL SUBSIDIZED- GRADUATE  
+>(3) DL UNSUBSIDIZED- UNDERGRADUATE  
+>(4) DL UNSUBSIDIZED- GRADUATE  
+>(5) DL PARENT PLUS  
+>(6) DL GRAD PLUS 
+>  
+>In the newly added columns, this formula:  
 >***=IF(ISNUMBER(SEARCH("-",O7))=TRUE,0,O7)***  
->The formula checked the column next to it (“$ of Disbursements”) to see if there is a “-“ which denotes no money, and returns a “0” (zero) instead. If there are only numbers in the cell, and no “-” (which denotes any money value), then it returns that money value. I did this only to correct the dash “-“ into a numeric value in order to use it in an addition formula.  
+>The formula checks the column next to it (“$ of Disbursements”) to see if there is a “-“ which denotes no money, and returns a “0” (zero) instead. If there are only numbers in the cell, and no “-” (which denotes any money value), then it returns that money value. I did this only to correct the dash “-“ into a numeric value in order to use it in an addition formula.  
 >I did this 6 times for the 2010-2011 data and for the 2015-2016 data (at the same time, by highlight both worksheets at once), in order to derive the sum of $ disbursements.  
   
 ### ★ Is the Sum Between $2000-$9500?  
+>Insert another column on the left side of the all the loans with formula:  
 >***=IF(AND(I7>=2000,I7<9500),"yes","no")***  
 >Once I had the sum, I then used a conditional statement to determine if the sum fell between $2000 (or equal to) and $9500, with a simple “yes” or “no”  
   
