@@ -139,10 +139,38 @@ I used a similar method from Question 1:
 >***=AJ296***  
 >This is just a quick way to pull the one column of data that we want: "Direct Loans Unsubsidized Graduate, $ of Loans Originated"  
   
-### ★ Indentify the Median  
+### ★ Sort: Smallest to Largest  
 >In this newly added column of six entries, 5 were non-zero entries.  
->The median number is 5889721 (it is the number in the middle: 2 less than it, and two greater than it).  
+>We need to sort the data (doesn't matter in which direction, but I sorted from smallest to largest)  
+  
+### ★ Indentify the Median  
+> The median is the number in the middle of sorted data. In this case, there were 2 less than it, and two greater than it (since there were 5 non-zero entries).  
+>Therefore, the median number is 5889721
+  
+----------
+# QUESTION 5 (*ANSWER= 193850316*)
+***$193,850,316 is the sum of all fully disbursed Grad Plus loans from football-champion-schools from 2001-2015 (inclusive).***  
 
+### ★ Research First!
+>I referred to www.ncaa.com in order to obtain the information about which schools were football champions.  
+>The information I found on that website was helpful, but also a bit vague, so I crossed refereced this information with other online sources. I did this in order to confirm the school names (Example: “Florida” is indeed the “University of Florida” and not “Florida University”).  
+>  
+>**NOTE:** I put this information in a list on a separate sheet  
+  
+### ★ Another Column for Football Champs  
+>Once I had a list (in another sheet) of all the football champs, I added another column to make a note on the main data list of which schools these were...  
+>I did this manually for the same reason as in Question 3 ("LOOKUP" formulas just weren't a good option, and there weren't that many to quickly filter and make a quick note.  
+  
+### ★ Insert Column and Formula  
+>***=AX1125***  
+>Just like all the times before, all I did was, simply, insert a new column and use a formula to copy the "Fully Disbursed for Grad Plus, $ of Loans Originated" so that the important information was all together in a nice location where I was working...  
+>I "pulled" this formula down for the other 5 entries in the column.
+  
+### ★ Addition  
+>***=SUM(C7:C10000)***  
+>Now that we have 6 entries with a dollar amount, we need to simply add the six entries.
+>So, finally, in one of the cells in the top “frozen” rows, a formula to find the sum.
+>The result is "193850316"
 
 
 
