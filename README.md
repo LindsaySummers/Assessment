@@ -50,9 +50,9 @@ Then, I double click on the bottom right corner of the highlighted cell with for
 **NOTE:** Repeat all of these steps again for other data set as well!  
   
 ----------
-### QUESTION 1: Consider all of the schools that disbursed a total of greater than or equal to $2,000 and less than $9,500 in loans for the time period reported on the spreadsheets provided (i.e. quarter 1). How many more schools met this criteria in 2015 than in 2010?  
+### *QUESTION 1: Consider all of the schools that disbursed a total of greater than or equal to $2,000 and less than $9,500 in loans for the time period reported on the spreadsheets provided (i.e. quarter 1). How many more schools met this criteria in 2015 than in 2010?*  
   
-# *ANSWER=1*  
+# ANSWER=1  
   
 ***NOTE:** Before beginning, hold down CTRL and click on the other tab (the other spreadsheet of the other data set). This will highlight BOTH tab so that you can work with both data sets at once and save you half the amount of time.  
 If you're wondering why I didn't do this before, it's because entries were being deleted... So to be on the save side, I thought it was best to work with each data set separately.  
@@ -89,8 +89,10 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >153-152 = 1  
   
 ----------
-# QUESTION 2 (*ANSWER= 2*)  
-I used a similar method from Question 1:  
+### QUESTION 2: Consider the sum of expected total loan amount if the loans were fully disbursed for each school. In 2010 as compared to 2015, for how many more schools was this amount greater than $20,000,000?   
+  
+# ANSWER= 2  
+*(I used a similar method from Question 1)*  
   
 ### ★ Insert Column with Formula  
 >***=IF(ISNUMBER(SEARCH("-",W64))=TRUE,0,W64)***  
@@ -116,7 +118,9 @@ I used a similar method from Question 1:
 >530-528 = 2  
   
 ----------
-# QUESTION 3 (*ANSWER= 6862*)  
+### QUESTION 3: In 2015, consider all the colonial colleges founded before the declaration of independence. Amongst these, what was the largest number of recipients within a school for either DL Graduate or DL Grad Plus loans?  
+  
+# ANSWER= 6862  
 ***In 2015, Rutgers University had the largest number of recipients (6,862) who received either the DL Graduate or DL Grad Plus loans.***  
   
 ### ★ Colonial Colleges?  
