@@ -51,7 +51,8 @@ Then, I double click on the bottom right corner of the highlighted cell with for
   
 ----------
 ### QUESTION 1: Consider all of the schools that disbursed a total of greater than or equal to $2,000 and less than $9,500 in loans for the time period reported on the spreadsheets provided (i.e. quarter 1). How many more schools met this criteria in 2015 than in 2010?  
-#*ANSWER=1*d
+  
+# *ANSWER=1*  
   
 ***NOTE:** Before beginning, hold down CTRL and click on the other tab (the other spreadsheet of the other data set). This will highlight BOTH tab so that you can work with both data sets at once and save you half the amount of time.  
 If you're wondering why I didn't do this before, it's because entries were being deleted... So to be on the save side, I thought it was best to work with each data set separately.  
@@ -70,6 +71,7 @@ HOWEVER, now that we're not deleting, AND both worksheets are set up with the ex
 >In the newly added columns, this formula:  
 >***=IF(ISNUMBER(SEARCH("-",O7))=TRUE,0,O7)***  
 >The formula checks the column next to it (“$ of Disbursements”) to see if there is a “-“ which denotes no money, and returns a “0” (zero) instead. If there are only numbers in the cell, and no “-” (which denotes any money value), then it returns that money value. I did this only to correct the dash “-“ into a numeric value in order to use it in an addition formula.  
+>  
 >I did this 6 times for the 2010-2011 data and for the 2015-2016 data (at the same time, by highlight both worksheets at once), in order to derive the sum of $ disbursements.  
   
 ### ★ Is the Sum Between $2000-$9500?  
